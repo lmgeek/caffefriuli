@@ -1,4 +1,5 @@
 # Caffè Friuli
+
 - [x] Build the requested single-page website and original brand identity.
 - [x] Add local SEO, verified information and configurable contact links.
 - [x] Verify navigation, images and desktop/mobile layout.

@@ -1,7 +1,7 @@
-import { cafeInfo } from '@/lib/cafe-info';
+import { cafeInfo } from "@/lib/cafe-info";
 
 // Public browser key for the Google Maps Embed API.
-const GOOGLE_MAPS_BROWSER_KEY = 'AIzaSyBmvJph4LmrbtW7skeczzpBIyb9WWzFKo4';
+const GOOGLE_MAPS_BROWSER_KEY = "AIzaSyBmvJph4LmrbtW7skeczzpBIyb9WWzFKo4";
 
 export function CafeMap() {
   const query = `${cafeInfo.name}, ${cafeInfo.streetAddress}, ${cafeInfo.postalCode} ${cafeInfo.city}, ${cafeInfo.country}`;

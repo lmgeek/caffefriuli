@@ -30,6 +30,20 @@ The build produces a Nitro `node-server` output in `.output/`, ready to run with
 node .output/server/index.mjs
 ```
 
+## Docker / Dokploy
+
+The included `Dockerfile` builds the app and runs the Nitro Node server. In Dokploy, select
+**Docker** as the build type, point it at this repository and expose port `3000`. No database,
+secrets or build variables are required: all photography is served from `public/assets/` and the
+public Google Maps browser key is part of the source.
+
+```sh
+docker build -t caffefriuli .
+docker run --rm -p 3000:3000 caffefriuli
+```
+
+`PORT` and `HOST` can be overridden by the deployment environment if needed.
+
 ## Built with
 
 - TanStack Start

@@ -81,12 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Caffè Friuli | Caffetteria nel Centro di Latina" },
       { name: "description", content: "Caffè Friuli: il piacere del caffè nel cuore di Latina." },
-      
+
       { property: "og:title", content: "Caffè Friuli | Caffetteria nel Centro di Latina" },
-      { property: "og:description", content: "Caffè Friuli: il piacere del caffè nel cuore di Latina." },
+      {
+        property: "og:description",
+        content: "Caffè Friuli: il piacere del caffè nel cuore di Latina.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      
     ],
     links: [
       {
@@ -96,7 +98,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,

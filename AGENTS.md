@@ -1,4 +1,5 @@
 ## Website architecture
+
 - Keep the café website as a single index route with section anchors, as explicitly requested; no backend or additional pages are needed.
 - Store official contact configuration and structured business data in a shared browser-safe module so unconfirmed details stay absent consistently.
 - Serve uploaded and downloaded photography as static files from `public/assets/`; keep reusable section presentation in global semantic styles.
