@@ -1,24 +1,33 @@
-# Welcome to your Lovable project
+# Caffè Friuli
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+Website for Caffè Friuli in Latina, built as a single-page TanStack Start app with section anchors.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+You need Node.js 22.12+ and Bun (or npm).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+bun install
+bun run dev
+```
+
+With npm:
+
+```sh
+npm install
 npm run dev
+```
+
+## Build
+
+```sh
+bun run build
+```
+
+The build produces a Nitro `node-server` output in `.output/`, ready to run with Node (for example on Dokploy):
+
+```sh
+node .output/server/index.mjs
 ```
 
 ## Built with
