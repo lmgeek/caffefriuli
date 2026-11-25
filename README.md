@@ -35,7 +35,7 @@ node .output/server/index.mjs
 The included `Dockerfile` builds the app and runs the Nitro Node server. In Dokploy, select
 **Docker** as the build type, point it at this repository and expose port `3000`. No database,
 secrets or build variables are required: all photography is served from `public/assets/` and the
-public Google Maps browser key is part of the source.
+map uses Google's public embed without an API key.
 
 ```sh
 docker build -t caffefriuli .
